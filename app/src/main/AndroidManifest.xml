@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.crictone.teamexpert">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.crictone.teamexpert.Application"
+        android:allowBackup="false"
+        android:alwaysDrawnWithCache="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FantacyExpert"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="n">
+        <activity android:name="com.crictone.teamexpert.ProfileActivity"></activity>
+        <activity
+            android:name="com.crictone.teamexpert.TopFantacyAppsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.NewsmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.Refer_EarnActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity android:name="com.crictone.teamexpert.IntroActivity" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name="com.crictone.teamexpert.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.crictone.teamexpert.NavigationItemsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.NewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.MatchDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+        <activity
+            android:name="com.crictone.teamexpert.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FantacyExpert.NoActionBar" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.crictone.teamexpert.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1125391338676489~1800164346"/>
+
+
+    </application>
+
+</manifest>

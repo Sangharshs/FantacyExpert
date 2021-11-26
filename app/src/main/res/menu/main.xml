@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/telegram"
+        android:id="@+id/action_telegram"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Subscribe" />
+
+    <item
+        android:visible="false"
+        android:icon="@drawable/crown"
+        android:id="@+id/action_purchase"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Subscribe" />
+
+
+</menu>

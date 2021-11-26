@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "579701858873",
+    "project_id": "cric-tone",
+    "storage_bucket": "cric-tone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579701858873:android:e8a7e4688ec472dda0e3e8",
+        "android_client_info": {
+          "package_name": "com.crictone.teamexpert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579701858873-vqtq4oqnitq5fugt78j3edpt4a3be1fq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQZArVcR_KOzeRe9QenDNlknUFzUELizA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579701858873-vqtq4oqnitq5fugt78j3edpt4a3be1fq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

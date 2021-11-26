@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/top"
+        android:checkableBehavior="none">
+        <item
+            android:visible="false"
+            android:icon="@drawable/ic_baseline_account_"
+            android:id="@+id/nav_profile"
+            android:title="@string/account" />
+        <item
+            android:visible="false"
+            android:icon="@drawable/crown"
+            android:id="@+id/nav_subscribe"
+            android:title="@string/subscribe" />
+        <item
+            android:icon="@drawable/feedback_24"
+            android:id="@+id/nav_read_me"
+            android:title="@string/read_me_tips" />
+        <item
+            android:icon="@drawable/news_"
+            android:id="@+id/nav_news"
+            android:title="News" />
+        <item
+            android:visible="false"
+            android:icon="@drawable/top_fantacy_apps"
+            android:id="@+id/nav_top_fantacy_apps"
+            android:title="Top Fantasy Apps" />
+
+    </group>
+    <group
+        android:id="@+id/top1"
+        android:checkableBehavior="none">
+        <item
+            android:icon="@drawable/share_24"
+            android:id="@+id/nav_share_app"
+            android:title="@string/share_app" />
+
+        <item
+            android:icon="@drawable/contacts_24"
+            android:id="@+id/nav_contact_us"
+            android:title="@string/contact_us" />
+        <item
+            android:icon="@drawable/refer"
+            android:id="@+id/refer_earn"
+            android:title="@string/refer_amp_earn" />
+
+        <item
+            android:icon="@drawable/redeem_24"
+            android:id="@+id/redeem_points"
+            android:title="@string/redeem" />
+    </group>
+    <group
+        android:id="@+id/top2"
+        android:checkableBehavior="none">
+        <item
+            android:icon="@drawable/update_24"
+            android:id="@+id/nav_check_update"
+            android:title="@string/check_updates" />
+
+        <item
+            android:icon="@drawable/privacy_tip_24"
+            android:id="@+id/nav_terms_and_conditions"
+            android:title="@string/terms_amp_conditions" />
+
+        <item
+            android:icon="@drawable/lock_24"
+            android:id="@+id/nav_privacy_policy"
+            android:title="@string/privacy_policy" />
+    </group>
+    <group
+        android:id="@+id/bottom"
+        android:checkableBehavior="none">
+        <item
+            android:icon="@drawable/rate_24"
+            android:id="@+id/nav_rate_us"
+            android:title="@string/rate_us" />
+
+        <item
+            android:icon="@drawable/login"
+            android:id="@+id/nav_login"
+            android:title="@string/log_in" />
+        <item
+            android:icon="@drawable/login"
+            android:id="@+id/nav_logout"
+            android:title="@string/log_out" />
+    </group>
+</menu>

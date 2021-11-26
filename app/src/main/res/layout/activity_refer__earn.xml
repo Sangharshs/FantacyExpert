@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Refer_EarnActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:elevation="0dp"
+       android:theme="@style/Theme.FantacyExpert.AppBarOverlay"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@drawable/action_bar_background"
+       >
+      <LinearLayout
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <TextView
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:textSize="23sp"
+             android:textColor="@color/white"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="@string/app_name"/>
+      </LinearLayout>
+
+   </androidx.appcompat.widget.Toolbar>
+
+   <LinearLayout
+       android:id="@+id/linearLayout6"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+          android:layout_marginTop="30dp"
+          android:id="@+id/imageView2"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/app_icon" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:fontFamily="@font/nowayregular"
+          android:gravity="center"
+          android:text="Share your refer code"
+          android:textSize="18sp" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/edittext_border"
+          android:gravity="center"
+          android:orientation="horizontal"
+          app:layout_constraintBottom_toTopOf="@+id/textView4"
+          tools:layout_editor_absoluteX="10dp">
+
+         <TextView
+             android:id="@+id/user_refer_id"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:fontFamily="@font/nowayregular"
+             android:textColor="@color/app_color"
+             android:textSize="24sp" />
+
+         <ImageButton
+             android:id="@+id/copycode"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:background="@color/white"
+             android:src="@drawable/content_copy"
+             android:tint="@color/app_color" />
+
+      </LinearLayout>
+
+      <ImageView
+          android:visibility="gone"
+          android:layout_width="1280dp"
+          android:layout_height="720dp"
+          android:id="@+id/s1"
+         android:src="@drawable/app_icon"/>
+      <Button
+          android:id="@+id/inviteButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:background="@color/green"
+          android:fontFamily="@font/nowayregular"
+          android:text="Share"
+          android:textColor="@android:color/white"
+          android:textSize="20sp"
+          tools:layout_editor_absoluteX="144dp"
+          tools:layout_editor_absoluteY="678dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/nowayregular"
+          android:gravity="center"
+          android:text="@string/invite_your_friend_and_earn_reward"
+          android:textSize="18sp" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/totalInvite"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_gravity="bottom"
+          android:layout_margin="10dp"
+          android:background="@color/app_color"
+          android:fontFamily="@font/nowayregular"
+          android:gravity="center"
+          android:text="0"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+   </LinearLayout>
+
+</LinearLayout>

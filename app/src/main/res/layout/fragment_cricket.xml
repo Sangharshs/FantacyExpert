@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ccc"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.cricket_fragment.CricketFragment">
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_refresh"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_margin="10dp"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            layout="@layout/shimmer_item"/>
+        <include
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            layout="@layout/shimmer_item"/>
+        <include
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            layout="@layout/shimmer_item"/>
+        <include
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            layout="@layout/shimmer_item"/>
+            <include
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                layout="@layout/shimmer_item"/>
+            <include
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                layout="@layout/shimmer_item"/>
+            <include
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                layout="@layout/shimmer_item"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+      <include
+          android:layout_margin="3dp"
+          android:layout_gravity="center_horizontal"
+          layout="@layout/slider_item"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cricket_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="50dp"
+                android:id="@+id/animationView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center|center_vertical"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/search_empty" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

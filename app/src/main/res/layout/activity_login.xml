@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progressLayout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ProgressBar>
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="right"
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ff"
+        android:text="Skip"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_below="@+id/skip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nowayregular"
+        android:text="Welcome "
+        android:textColor="@color/app_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <EditText
+        android:maxLines="1"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/nowayregular"
+        android:hint="Username"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_below="@+id/username_edittext"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/show_pass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="40dp"
+            android:alpha=".5"
+            android:onClick="ShowHidePass"
+            android:padding="5dp"
+            android:src="@drawable/show_password" />
+
+        <EditText
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/app_color"
+            android:fontFamily="@font/nowayregular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:fontFamily="@font/nowayregular"
+        android:id="@+id/forgotPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"/>
+
+    <Button
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="@font/ff"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/login"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nowayregular"
+        android:text="Don't have an account?"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nowayregular"
+        android:text="Register."
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="449dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
